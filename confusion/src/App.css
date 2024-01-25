@@ -1,0 +1,109 @@
+.App {
+  width: auto;
+  text-align: center;
+}
+
+
+
+.TableContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.TableColumn {
+  width: 30%;
+  margin: 5px;
+}
+
+.Header {
+ 
+}
+
+.NavHeader {
+  background-color: black;
+}
+
+ul.Tabpanel {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  list-style-type: none;
+}
+
+ul li:hover {
+  background-color: rgba(255, 255, 0, 0.786);
+  overflow: hidden;
+}
+
+ul li {
+  padding: 10px 0;
+}
+
+.Links {
+  margin: 10px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.row1 {
+  display: flex;
+  width: auto;
+}
+
+.row2 {
+  display: flex;
+}
+
+.column {
+  width: 623px;
+  margin: 5px 5px 10px 5px;
+}
+
+.Detail {
+  background-color: blue;
+  padding: 5px;
+  margin-bottom: 0px;
+}
+
+.BTN {
+  background-color: blue;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.Footer {
+  background-color: yellow;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.Footer h3 {
+  margin-bottom: 0px;
+}
+
+.overlay {
+  
+}
+
+.openPopup {
+  text-decoration: none;
+  color: white;
+}
+
+.ThemeBtn {
+  margin-right: 32px;
+  padding: 10px 0;
+}
+
+.Themebtn {
+  text-decoration: none;
+}
+
+
