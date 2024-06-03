@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Orchids.css";
 
 const Orchids = ({ orchids }) => {
   return (
-    <div>
+    <div className="orchids-grid">
       {orchids.map((orchid) => (
         <div key={orchid.Id} className="orchid-card">
           <img src={orchid.image} alt={orchid.name} />
