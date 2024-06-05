@@ -1,6 +1,7 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import OrchidsListData from "../shared/ListOfOrchids"; // Adjust the path if necessary
+import { useParams, Link } from "react-router-dom";
+import OrchidsListData from "../shared/ListOfOrchids";
+import "./Detail.css";
 
 const Detail = () => {
   const { id } = useParams();
@@ -11,28 +12,34 @@ const Detail = () => {
   }
 
   return (
-    <div className="orchid-detail">
-      <img src={orchid.image} alt={orchid.name} />
-      <h3>{orchid.name}</h3>
-      <p>
-        <strong>Rating:</strong> {orchid.rating}
-      </p>
-      <p>
-        <strong>Special:</strong> {orchid.isSpecial ? "Yes" : "No"}
-      </p>
-      <p>
-        <strong>Color:</strong> {orchid.color}
-      </p>
-      <p>
-        <strong>Origin:</strong> {orchid.origin}
-      </p>
-      <p>
-        <strong>Category:</strong> {orchid.category}
-      </p>
-      <p>
-        <strong>Habitat:</strong> {orchid.habitat}
-      </p>
-      <p>{orchid.decription}</p>
+    <div className="detail-container">
+      <div className="detail-content">
+        <div className="detail-image">
+          <img src={orchid.image} alt={orchid.name} />
+        </div>
+        <div className="detail-text">
+          <h2>{orchid.name}</h2>
+          <p>
+            <strong>Rating:</strong> {orchid.rating}
+          </p>
+          <p>
+            <strong>Special:</strong> {orchid.isSpecial ? "Yes" : "No"}
+          </p>
+          <p>
+            <strong>Color:</strong> {orchid.color}
+          </p>
+          <p>
+            <strong>Origin:</strong> {orchid.origin}
+          </p>
+          <p>
+            <strong>Category:</strong> {orchid.category}
+          </p>
+          <p>
+            <strong>Habitat:</strong> {orchid.habitat}
+          </p>
+          <p>{orchid.decription}</p>
+        </div>
+      </div>
     </div>
   );
 };

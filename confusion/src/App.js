@@ -13,9 +13,7 @@ function AppNav() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/detail/:id" element={<Detail />} />
-        <Route path="./components/Contact" element={<contact />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

@@ -65,11 +65,34 @@ ul li {
   margin: 5px 5px 10px 5px;
 }
 
-.Detail {
-  background-color: blue;
-  padding: 5px;
-  margin-bottom: 0px;
+.detail-container {
+  display: flex;
+  justify-content: center;
 }
+
+.detail-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+}
+
+.detail-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.detail-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .BTN {
   background-color: blue;
@@ -79,7 +102,7 @@ ul li {
 }
 
 .Footer {
-  background-color: yellow;
+  background-color: rgb(245, 245, 245);
   padding: 20px;
   margin-bottom: 0px;
 }
