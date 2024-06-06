@@ -1,4 +1,4 @@
-.detail-container {
+/* .detail-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -19,7 +19,7 @@
 .detail-text {
   flex: 1;
   padding-right: 20px;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 .detail-image {
@@ -64,4 +64,40 @@ h6 {
 
 .detail-text p {
   margin-top: 5px;
+} */
+
+.detail-container {
+  padding: 20px;
+  text-align: left;
+}
+
+.detail-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.detail-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.detail-image {
+  width: 190px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.detail-info {
+  max-width: 600px;
+}
+
+.detail-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-button {
+  margin-top: 20px;
 }

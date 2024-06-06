@@ -14,7 +14,7 @@ const OrchidsListData = [
   },
   {
     Id: 2,
-    name: "Cattleya (Corsage Orchid) ",
+    name: "Cattleya  ",
     rating: 7,
     isSpecial: true,
     image: "/asset/gdgs.jpg",

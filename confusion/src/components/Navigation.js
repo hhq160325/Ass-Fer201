@@ -25,7 +25,7 @@ export default function Navigation() {
           </li>
           <li>
             <Link
-              to="./components/Contact"
+              to="/Contact"
               className="Links"
               href="#contact"
               style={{ color: theme.color }}

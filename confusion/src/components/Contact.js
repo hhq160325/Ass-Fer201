@@ -1,5 +1,7 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Container, Box } from "@mui/material";
+import { Link } from "react-router-dom";
+import "./Contact.css";
 
 const Contact = () => {
   const contactInfo = {
@@ -9,9 +11,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
-      <h1>Contact</h1>
-      <div className="contact-details">
+    <Container className="contact-container">
+      <Box className="contact-header">
+        <h1>Contact</h1>
+      </Box>
+      <Box className="contact-details">
         <p>
           <strong>Address:</strong> {contactInfo.address}
         </p>
@@ -21,8 +25,13 @@ const Contact = () => {
         <p>
           <strong>Email:</strong> {contactInfo.email}
         </p>
-      </div>
-    </div>
+      </Box>
+      <Box className="contact-footer">
+        <Link to="/">
+          <button className="home-button">Return Home</button>
+        </Link>
+      </Box>
+    </Container>
   );
 };
 

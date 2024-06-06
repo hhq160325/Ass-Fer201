@@ -1,0 +1,31 @@
+.contact-container {
+  padding: 20px;
+  text-align: left;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-footer {
+  text-align: center;
+}
+
+.home-button {
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  background-color: #1565c0;
+}

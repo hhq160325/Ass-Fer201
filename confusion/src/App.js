@@ -13,7 +13,7 @@ function AppNav() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/detail/:id" element={<Detail />} />
-        <Route path="./Contact" element={<Contact />} />{" "}
+        <Route path="/Contact" element={<Contact />} />{" "}
       </Routes>
     </div>
   );
