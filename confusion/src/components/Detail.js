@@ -1,5 +1,6 @@
 // import React from "react";
 // import { useParams, Link } from "react-router-dom";
+// import { Container, Box, Button, Typography } from "@mui/material";
 // import OrchidsListData from "../shared/ListOfOrchids";
 // import "./Detail.css";
 
@@ -12,35 +13,54 @@
 //   }
 
 //   return (
-//     <div className="detail-container">
-//       <div className="detail-content">
-//         <div className="detail-image">
-//           <img src={orchid.image} alt={orchid.name} />
-//         </div>
-//         <div className="detail-text">
-//           <h2>{orchid.name}</h2>
-//           <p>
+//     <Container className="detail-container">
+//       <Typography variant="h4" className="detail-title">
+//         Detail
+//       </Typography>
+//       <Box className="detail-content">
+//         <img src={orchid.image} alt={orchid.name} className="detail-image" />
+//         <Box className="detail-info">
+//           <Typography variant="h5">{orchid.name}</Typography>
+//           <Typography>
 //             <strong>Rating:</strong> {orchid.rating}
-//           </p>
-//           <p>
+//           </Typography>
+//           <Typography>
 //             <strong>Special:</strong> {orchid.isSpecial ? "Yes" : "No"}
-//           </p>
-//           <p>
+//           </Typography>
+//           <Typography>
 //             <strong>Color:</strong> {orchid.color}
-//           </p>
-//           <p>
+//           </Typography>
+//           <Typography>
 //             <strong>Origin:</strong> {orchid.origin}
-//           </p>
-//           <p>
+//           </Typography>
+//           <Typography>
 //             <strong>Category:</strong> {orchid.category}
-//           </p>
-//           <p>
+//           </Typography>
+//           <Typography>
 //             <strong>Habitat:</strong> {orchid.habitat}
-//           </p>
-//           <p>{orchid.decription}</p>
-//         </div>
-//       </div>
-//     </div>
+//           </Typography>
+//           <Typography>{orchid.description}</Typography>
+//           {orchid.videoUrl && (
+//             <iframe
+//               width="560"
+//               height="315"
+//               src={orchid.videoUrl}
+//               title="YouTube video player"
+//               frameBorder="0"
+//               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+//               allowFullScreen
+//             ></iframe>
+//           )}
+//         </Box>
+//       </Box>
+//       <Box className="detail-footer">
+//         <Link to="/">
+//           <Button variant="contained" color="primary" className="home-button">
+//             Return Home
+//           </Button>
+//         </Link>
+//       </Box>
+//     </Container>
 //   );
 // };
 
@@ -86,7 +106,17 @@ const Detail = () => {
           <Typography>
             <strong>Habitat:</strong> {orchid.habitat}
           </Typography>
-          <Typography>{orchid.decription}</Typography>
+          <Typography>{orchid.description}</Typography>
+          {orchid.videoUrl && (
+            <iframe
+              className="detail-video"
+              src={orchid.videoUrl}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          )}
         </Box>
       </Box>
       <Box className="detail-footer">
